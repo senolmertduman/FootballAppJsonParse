@@ -7,23 +7,62 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF13CF1B2A7D35130021385D /* SelectTeamVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF13CF1A2A7D35130021385D /* SelectTeamVC.swift */; };
+		BF13CF1D2A7D378A0021385D /* SearchedTeamsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF13CF1C2A7D378A0021385D /* SearchedTeamsCell.swift */; };
 		BF58C5A02A77EA7E00ACCC1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF58C59F2A77EA7E00ACCC1A /* AppDelegate.swift */; };
 		BF58C5A22A77EA7E00ACCC1A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF58C5A12A77EA7E00ACCC1A /* SceneDelegate.swift */; };
-		BF58C5A42A77EA7E00ACCC1A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF58C5A32A77EA7E00ACCC1A /* ViewController.swift */; };
+		BF58C5A42A77EA7E00ACCC1A /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF58C5A32A77EA7E00ACCC1A /* LoginVC.swift */; };
 		BF58C5A72A77EA7E00ACCC1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF58C5A52A77EA7E00ACCC1A /* Main.storyboard */; };
 		BF58C5A92A77EA7F00ACCC1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF58C5A82A77EA7F00ACCC1A /* Assets.xcassets */; };
 		BF58C5AC2A77EA7F00ACCC1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF58C5AA2A77EA7F00ACCC1A /* LaunchScreen.storyboard */; };
+		BF58C5B52A77EACE00ACCC1A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = BF58C5B42A77EACE00ACCC1A /* Alamofire */; };
+		BF58C5B82A77EB0500ACCC1A /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = BF58C5B72A77EB0500ACCC1A /* SDWebImage */; };
+		BF58C5BA2A77EBA800ACCC1A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF58C5B92A77EBA800ACCC1A /* GoogleService-Info.plist */; };
+		BF58C5BD2A77EC0F00ACCC1A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = BF58C5BC2A77EC0F00ACCC1A /* FirebaseAuth */; };
+		BF58C5BF2A77ED6500ACCC1A /* LeaguesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF58C5BE2A77ED6500ACCC1A /* LeaguesVC.swift */; };
+		BF58C5C12A77F52400ACCC1A /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF58C5C02A77F52400ACCC1A /* SettingsVC.swift */; };
+		BF58C5C32A77F53E00ACCC1A /* MyClubVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF58C5C22A77F53E00ACCC1A /* MyClubVC.swift */; };
+		BF7D852C2A7BD59800E6A12B /* SwiftSVG in Frameworks */ = {isa = PBXBuildFile; productRef = BF7D852B2A7BD59800E6A12B /* SwiftSVG */; };
+		BF7D852F2A7BD67500E6A12B /* SVGKit in Frameworks */ = {isa = PBXBuildFile; productRef = BF7D852E2A7BD67500E6A12B /* SVGKit */; };
+		BF87BBD02A7BBBE600784D1C /* Persons.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF87BBCF2A7BBBE600784D1C /* Persons.swift */; };
+		BF87BBD22A7BC1B900784D1C /* SquadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF87BBD12A7BC1B900784D1C /* SquadVC.swift */; };
+		BF87BBD42A7BC21B00784D1C /* PersonDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF87BBD32A7BC21B00784D1C /* PersonDetailsVC.swift */; };
+		BF87BBD62A7BC39E00784D1C /* PersonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF87BBD52A7BC39E00784D1C /* PersonCell.swift */; };
+		BFB151282A7A7CB900A0300F /* CompetitionsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB151272A7A7CB900A0300F /* CompetitionsResponse.swift */; };
+		BFB1512A2A7A7CE300A0300F /* Competitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB151292A7A7CE300A0300F /* Competitions.swift */; };
+		BFB1512C2A7A869F00A0300F /* TeamsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB1512B2A7A869F00A0300F /* TeamsVC.swift */; };
+		BFB1512E2A7A875F00A0300F /* Teams.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB1512D2A7A875F00A0300F /* Teams.swift */; };
+		BFB151302A7A889300A0300F /* TeamsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB1512F2A7A889300A0300F /* TeamsResponse.swift */; };
+		BFB151322A7A8CC000A0300F /* TeamCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB151312A7A8CC000A0300F /* TeamCell.swift */; };
+		BFC1179B2A79604600EECED8 /* LeagueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC1179A2A79604600EECED8 /* LeagueCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BF13CF1A2A7D35130021385D /* SelectTeamVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTeamVC.swift; sourceTree = "<group>"; };
+		BF13CF1C2A7D378A0021385D /* SearchedTeamsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchedTeamsCell.swift; sourceTree = "<group>"; };
 		BF58C59C2A77EA7E00ACCC1A /* FootballApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FootballApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF58C59F2A77EA7E00ACCC1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF58C5A12A77EA7E00ACCC1A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BF58C5A32A77EA7E00ACCC1A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BF58C5A32A77EA7E00ACCC1A /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		BF58C5A62A77EA7E00ACCC1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BF58C5A82A77EA7F00ACCC1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF58C5AB2A77EA7F00ACCC1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF58C5AD2A77EA7F00ACCC1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF58C5B92A77EBA800ACCC1A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BF58C5BE2A77ED6500ACCC1A /* LeaguesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaguesVC.swift; sourceTree = "<group>"; };
+		BF58C5C02A77F52400ACCC1A /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		BF58C5C22A77F53E00ACCC1A /* MyClubVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyClubVC.swift; sourceTree = "<group>"; };
+		BF87BBCF2A7BBBE600784D1C /* Persons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persons.swift; sourceTree = "<group>"; };
+		BF87BBD12A7BC1B900784D1C /* SquadVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquadVC.swift; sourceTree = "<group>"; };
+		BF87BBD32A7BC21B00784D1C /* PersonDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailsVC.swift; sourceTree = "<group>"; };
+		BF87BBD52A7BC39E00784D1C /* PersonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCell.swift; sourceTree = "<group>"; };
+		BFB151272A7A7CB900A0300F /* CompetitionsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompetitionsResponse.swift; sourceTree = "<group>"; };
+		BFB151292A7A7CE300A0300F /* Competitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Competitions.swift; sourceTree = "<group>"; };
+		BFB1512B2A7A869F00A0300F /* TeamsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsVC.swift; sourceTree = "<group>"; };
+		BFB1512D2A7A875F00A0300F /* Teams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Teams.swift; sourceTree = "<group>"; };
+		BFB1512F2A7A889300A0300F /* TeamsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsResponse.swift; sourceTree = "<group>"; };
+		BFB151312A7A8CC000A0300F /* TeamCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamCell.swift; sourceTree = "<group>"; };
+		BFC1179A2A79604600EECED8 /* LeagueCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +70,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF7D852F2A7BD67500E6A12B /* SVGKit in Frameworks */,
+				BF58C5B82A77EB0500ACCC1A /* SDWebImage in Frameworks */,
+				BF7D852C2A7BD59800E6A12B /* SwiftSVG in Frameworks */,
+				BF58C5BD2A77EC0F00ACCC1A /* FirebaseAuth in Frameworks */,
+				BF58C5B52A77EACE00ACCC1A /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,11 +102,28 @@
 			children = (
 				BF58C59F2A77EA7E00ACCC1A /* AppDelegate.swift */,
 				BF58C5A12A77EA7E00ACCC1A /* SceneDelegate.swift */,
-				BF58C5A32A77EA7E00ACCC1A /* ViewController.swift */,
+				BF58C5A32A77EA7E00ACCC1A /* LoginVC.swift */,
+				BF58C5BE2A77ED6500ACCC1A /* LeaguesVC.swift */,
+				BFB1512B2A7A869F00A0300F /* TeamsVC.swift */,
+				BF87BBD12A7BC1B900784D1C /* SquadVC.swift */,
+				BF87BBD32A7BC21B00784D1C /* PersonDetailsVC.swift */,
+				BF58C5C22A77F53E00ACCC1A /* MyClubVC.swift */,
+				BF13CF1A2A7D35130021385D /* SelectTeamVC.swift */,
+				BF58C5C02A77F52400ACCC1A /* SettingsVC.swift */,
 				BF58C5A52A77EA7E00ACCC1A /* Main.storyboard */,
 				BF58C5A82A77EA7F00ACCC1A /* Assets.xcassets */,
 				BF58C5AA2A77EA7F00ACCC1A /* LaunchScreen.storyboard */,
 				BF58C5AD2A77EA7F00ACCC1A /* Info.plist */,
+				BFC1179A2A79604600EECED8 /* LeagueCell.swift */,
+				BFB151312A7A8CC000A0300F /* TeamCell.swift */,
+				BF87BBD52A7BC39E00784D1C /* PersonCell.swift */,
+				BF13CF1C2A7D378A0021385D /* SearchedTeamsCell.swift */,
+				BF58C5B92A77EBA800ACCC1A /* GoogleService-Info.plist */,
+				BFB151272A7A7CB900A0300F /* CompetitionsResponse.swift */,
+				BFB151292A7A7CE300A0300F /* Competitions.swift */,
+				BFB1512F2A7A889300A0300F /* TeamsResponse.swift */,
+				BFB1512D2A7A875F00A0300F /* Teams.swift */,
+				BF87BBCF2A7BBBE600784D1C /* Persons.swift */,
 			);
 			path = FootballApp;
 			sourceTree = "<group>";
@@ -83,6 +144,13 @@
 			dependencies = (
 			);
 			name = FootballApp;
+			packageProductDependencies = (
+				BF58C5B42A77EACE00ACCC1A /* Alamofire */,
+				BF58C5B72A77EB0500ACCC1A /* SDWebImage */,
+				BF58C5BC2A77EC0F00ACCC1A /* FirebaseAuth */,
+				BF7D852B2A7BD59800E6A12B /* SwiftSVG */,
+				BF7D852E2A7BD67500E6A12B /* SVGKit */,
+			);
 			productName = FootballApp;
 			productReference = BF58C59C2A77EA7E00ACCC1A /* FootballApp.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +179,13 @@
 				Base,
 			);
 			mainGroup = BF58C5932A77EA7E00ACCC1A;
+			packageReferences = (
+				BF58C5B32A77EACE00ACCC1A /* XCRemoteSwiftPackageReference "Alamofire" */,
+				BF58C5B62A77EB0500ACCC1A /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				BF58C5BB2A77EC0F00ACCC1A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				BF7D852A2A7BD59800E6A12B /* XCRemoteSwiftPackageReference "SwiftSVG" */,
+				BF7D852D2A7BD67500E6A12B /* XCRemoteSwiftPackageReference "SVGKit" */,
+			);
 			productRefGroup = BF58C59D2A77EA7E00ACCC1A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,6 +201,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF58C5AC2A77EA7F00ACCC1A /* LaunchScreen.storyboard in Resources */,
+				BF58C5BA2A77EBA800ACCC1A /* GoogleService-Info.plist in Resources */,
 				BF58C5A92A77EA7F00ACCC1A /* Assets.xcassets in Resources */,
 				BF58C5A72A77EA7E00ACCC1A /* Main.storyboard in Resources */,
 			);
@@ -138,9 +214,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF58C5A42A77EA7E00ACCC1A /* ViewController.swift in Sources */,
+				BF58C5A42A77EA7E00ACCC1A /* LoginVC.swift in Sources */,
+				BF58C5BF2A77ED6500ACCC1A /* LeaguesVC.swift in Sources */,
+				BFB1512A2A7A7CE300A0300F /* Competitions.swift in Sources */,
+				BFB151302A7A889300A0300F /* TeamsResponse.swift in Sources */,
+				BFB151282A7A7CB900A0300F /* CompetitionsResponse.swift in Sources */,
+				BF58C5C32A77F53E00ACCC1A /* MyClubVC.swift in Sources */,
+				BF87BBD42A7BC21B00784D1C /* PersonDetailsVC.swift in Sources */,
+				BF87BBD22A7BC1B900784D1C /* SquadVC.swift in Sources */,
+				BFB151322A7A8CC000A0300F /* TeamCell.swift in Sources */,
+				BF13CF1B2A7D35130021385D /* SelectTeamVC.swift in Sources */,
+				BF13CF1D2A7D378A0021385D /* SearchedTeamsCell.swift in Sources */,
+				BFB1512E2A7A875F00A0300F /* Teams.swift in Sources */,
 				BF58C5A02A77EA7E00ACCC1A /* AppDelegate.swift in Sources */,
 				BF58C5A22A77EA7E00ACCC1A /* SceneDelegate.swift in Sources */,
+				BFC1179B2A79604600EECED8 /* LeagueCell.swift in Sources */,
+				BF58C5C12A77F52400ACCC1A /* SettingsVC.swift in Sources */,
+				BFB1512C2A7A869F00A0300F /* TeamsVC.swift in Sources */,
+				BF87BBD62A7BC39E00784D1C /* PersonCell.swift in Sources */,
+				BF87BBD02A7BBBE600784D1C /* Persons.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +450,77 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BF58C5B32A77EACE00ACCC1A /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		BF58C5B62A77EB0500ACCC1A /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		BF58C5BB2A77EC0F00ACCC1A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+		BF7D852A2A7BD59800E6A12B /* XCRemoteSwiftPackageReference "SwiftSVG" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mchoe/SwiftSVG.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		BF7D852D2A7BD67500E6A12B /* XCRemoteSwiftPackageReference "SVGKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SVGKit/SVGKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BF58C5B42A77EACE00ACCC1A /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BF58C5B32A77EACE00ACCC1A /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		BF58C5B72A77EB0500ACCC1A /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BF58C5B62A77EB0500ACCC1A /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		BF58C5BC2A77EC0F00ACCC1A /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BF58C5BB2A77EC0F00ACCC1A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		BF7D852B2A7BD59800E6A12B /* SwiftSVG */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BF7D852A2A7BD59800E6A12B /* XCRemoteSwiftPackageReference "SwiftSVG" */;
+			productName = SwiftSVG;
+		};
+		BF7D852E2A7BD67500E6A12B /* SVGKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BF7D852D2A7BD67500E6A12B /* XCRemoteSwiftPackageReference "SVGKit" */;
+			productName = SVGKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BF58C5942A77EA7E00ACCC1A /* Project object */;
 }
