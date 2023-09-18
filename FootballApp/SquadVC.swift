@@ -20,6 +20,13 @@ class SquadVC: UIViewController {
         navigationItem.title = team.name!
         getTeam()
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toPersonDetailsVC"{
+            let index = sender as? Int
+            let destinationVC = segue.destination as! PersonDetailsVC
+            destinationVC.player = squad[index!]
+        }
+    }
     
     func getTeam(){
         let url = URL(string: "https://api.football-data.org/v4/teams/\(team.id!)")!
@@ -61,5 +68,8 @@ extension SquadVC:UITableViewDelegate,UITableViewDataSource{
         cell.personPosition.text = position.uppercased()
         cell.personName.text = person.name
         return cell
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "toPersonDetailsVC", sender: indexPath.row)
     }
 }

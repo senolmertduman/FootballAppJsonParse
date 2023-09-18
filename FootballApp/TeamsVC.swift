@@ -50,7 +50,6 @@ class TeamsVC: UIViewController {
                 if let takimlar = json.teams{
                     self.takimlar = takimlar
                 }
-                
                 DispatchQueue.main.async {
                     self.collectionView.reloadData()
                 }
@@ -72,7 +71,12 @@ extension TeamsVC:UICollectionViewDelegate,UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let takim = takimlar[indexPath.row]
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "teamCell", for: indexPath) as! TeamCell
-        cell.teamImage.sd_setImage(with: URL(string: takim.crest!))
+        let imageUrl = takim.crest!
+        if imageUrl.hasSuffix(".svg"){
+            cell.teamImage.image = UIImage(named: "noimage")
+        }else{
+            cell.teamImage.sd_setImage(with: URL(string: imageUrl))
+        }
         cell.teamNameLabel.text = takim.name
         return cell
     }

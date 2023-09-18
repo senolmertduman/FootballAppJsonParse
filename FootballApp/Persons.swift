@@ -12,17 +12,16 @@ class Persons : Decodable{
     var position:String?
     var dateOfBirth:String?
     var nationality:String?
-
+    
     init(id: Int, name: String, position: String, dateOfBirth: String, nationality: String) {
         self.id = id
         self.name = name
         self.position = position
         self.dateOfBirth = dateOfBirth
         self.nationality = nationality
-
     }
+    
     init(){
         
     }
-    
 }
